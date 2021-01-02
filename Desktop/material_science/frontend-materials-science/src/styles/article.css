@@ -1,0 +1,34 @@
+.Single-article{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 270px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    transition: .2s;
+    background: #ffffff;
+    box-shadow: -2rem 0 3rem  #000;
+
+}
+
+.Single-article:hover{
+    transform: translateY(-1rem);
+}
+.Single-article:hover~.Single-article {
+    transform: translateX(130px);
+}
+.Single-article:not(:first-child){
+    margin-left: -130px;
+}
+
+.author-row{
+    margin-block-start: auto;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: .5rem;
+    align-items: center;
+    color: #565656;
+    line-height: 1.3;
+}

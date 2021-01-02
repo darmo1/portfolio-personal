@@ -1,0 +1,35 @@
+.message{
+    align-items: center;
+    background-color: #24317A;;
+    color: white;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+.car-shop{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car-title{
+    background-color: hotpink;
+    border-radius: 12px;
+    padding:5px;
+    height: auto;
+    margin-top: -18px;
+    margin-left: 104px;
+}
+
+.banner-center:before , .banner-center:after {
+    content: '|';
+    margin:1rem;
+    font-weight: bold;
+}
+
+.banner-end{
+    margin-right: 3.5rem;
+}

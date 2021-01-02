@@ -1,0 +1,62 @@
+*{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.Header{
+    background: #121f3d;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    height: 80px;
+    width: 100%;
+}
+
+.Header-logo{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.Logo{
+    padding-left: 12px;
+}
+
+.Logo-img{
+    width:50px;
+}
+
+.Nav{
+    display:grid;
+    justify-self: end;
+}
+
+.Nav-unorderList{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.colombia-flag{
+    width:50px;
+    border-radius: 12px;
+    padding-left: 12px;
+}   
+
+.item{
+    color: #fff;
+    font-weight: 600;
+}
+
+.item:after{
+    content: "|";
+    
+    margin:12px;
+}
+
+.item:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
