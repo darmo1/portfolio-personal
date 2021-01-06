@@ -1,18 +1,21 @@
 .message{
     align-items: center;
-    background-color: #24317A;;
+    background-color: #24317A;
+    border-radius: 12px;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     height: 80px;
     justify-content: space-between;
     text-align: center;
-    padding: 0 1.5rem;
+    max-width: 1200px;
 }
 .car-shop{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10px auto;
 }
 
 .car-title{
@@ -28,8 +31,26 @@
     content: '|';
     margin:1rem;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .banner-end{
     margin-right: 3.5rem;
+    font-size: 20px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 768px){
+
+    .message{
+        height: auto;
+        justify-content: center;
+    }
+
+    .banner-end{
+        width: auto;
+        margin: 15px auto;
+    }
+
+
 }

@@ -1,0 +1,39 @@
+.Success {
+    display:flex;
+    flex-flow: column;
+    height: calc(100vh - 80px);
+    max-width: 1200px;
+    margin:auto;
+  }
+
+  .Success-content{
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      height: inherit;
+      justify-content: center;
+  }
+
+  .Success-content >h2{
+    line-height: 1.1;
+    font-size: 64px;
+    letter-spacing: -2px;
+    font-weight: 600;
+  }
+
+  .Success-content > span {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    margin: 3rem;
+
+  }
+
+  .Success-map {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    margin: 3rem;
+    color:rgb(0, 153, 255);
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+  

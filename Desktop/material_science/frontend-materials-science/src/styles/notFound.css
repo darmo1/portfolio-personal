@@ -1,0 +1,36 @@
+.container{
+    display:flex;
+    flex-flow: column;
+    height: calc(100vh - 80px);
+}
+
+.NotFound{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.NotFound-title{
+    line-height: 1.1;
+    font-size: 64px;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+.NotFound-text{
+    font-size: 28px;
+    margin: 3rem;
+}
+
+.NotFound-return{
+    color:rgb(0, 153, 255);
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.footer{
+    margin-top: auto;
+}
+

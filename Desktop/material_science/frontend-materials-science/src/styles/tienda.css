@@ -1,0 +1,16 @@
+.Tienda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    min-width: 760px;
+}
+
+.statement{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+    
+}

@@ -1,6 +1,7 @@
 .Home{
     margin:auto;
-    background-color: #24385b;
+    background-color: #121f3d;
+    max-width: 1200px;
 }
 
 a{
@@ -13,6 +14,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0 7rem 0;
 }
 
 
@@ -28,10 +30,11 @@ a{
     font-size: 700;
     margin-top: 1.5rem;
     text-align: center;
+    font-size: 40px;
 }
 
 .libreria{
-    background-color: #24385b;
+    background-color: #121f3d;
     display: grid;
     align-items: flex-end;
     grid-template-columns: 220px auto ;
@@ -56,7 +59,7 @@ a{
 .articles{
     display: flex;
     grid-column: 2/3;
-    width: calc(100%-350px);
+   
     height: 350px;
     overflow-x: visible;
     overflow-x: scroll;
@@ -68,7 +71,7 @@ a{
     height: 20px;
 }
 .articles::-webkit-scrollbar-thumb{
-    background: #201c29;
+    background: #121f3d;
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
@@ -79,12 +82,11 @@ a{
 
 .sponsor{
     background: #121f3d;
-   
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 3rem 0;
 }
 
 .sponsor-img{
@@ -93,23 +95,39 @@ a{
     justify-content: space-around;
     align-items: center;
 }
+.section-publicity{
+    align-items: center;
+    background: #24385b;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
 
 .section-publicity > h1{
-    height: 50px;
-    padding-top: 2rem;
-    font-size: 800;
+
+    padding-top: 1rem;
+    font-size: 700;
 }
 .publicity-content{
     color: #fff;
     background: #24385b;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    grid-template-columns: 400px auto;
     padding: 1.5rem;
+    max-width: 1200px;
     
     
 }
 
+.img-rocket{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.img-rocket > img{
+    width:250px;
+    border-radius:50% ;
+}
 .publicity-one{
     grid-column: 1/2;
     display: flex;
@@ -122,29 +140,47 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.publicity-two > p {
+    background: rgba(255,255, 255,0.3);
+    border-radius: 12px;
+    padding: 1rem;
+}
 
+.publicity-two > p , 
+.publicity-two > strong {
+    color:#becde3;
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 .mini-cart{
+    
     width: 300px;
     background: #98ca3f;
     height: 300px;
     border-radius: 12px;
     box-shadow: 0 8px 19px 0 rgba(3,9,30,.32);
-    margin: 12px auto;
     padding: 1.5rem;
 }
 .testimonial{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
     height: auto;
     align-self: center;
     padding-bottom: 1.5rem;
 }
 
+.mission{
+    text-align: center;
+}
+
 .publicity-text{
     text-align: center;
     margin-top: 12px;
+    color:#becde3;
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 .list-request-publicity{
@@ -155,18 +191,19 @@ a{
 }
 
 .list-request-publicity > li {
-    color:white;
-    width: 150px;
-    height: auto;
+    color: #000;
+    width: 200px;
     border-radius: 12px;
-    padding: 12px;
-    border: solid thin #98ca3f;
+    padding: 20px;
     display: flex;
     align-items:center;
     justify-content: center;
     margin: 0.5rem;
     text-align: center;
+    font-size: 400;
 }
+
+
 
 .icon-sponsor{
     width: 50px;
@@ -178,4 +215,51 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .lastBlogs{
+        padding-bottom: 1.5rem;
+    }
+
+    .libreria{
+        display: flex;
+        width: 95%;
+    }
+
+    .libreria-title{
+        display: none;
+        order:2;
+    }
+
+    .articles{
+        order:1;
+    }
+
+    .Single-article{
+        width: 150px;
+    }
+
+    .publicity-content{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0%;
+    }
+
+    .publicity-two > p{
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .sponsor-img {
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        display: 1rem 2rem;
+    }
+
+    .sponsor-img > a {
+        margin: 10px 2rem;
+    }
 }

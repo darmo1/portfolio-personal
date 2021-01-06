@@ -28,9 +28,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="Footer-aid">
-        <h2>Contáctanos en </h2>
-          <p>materiales@materiales.com</p>
-        <h2> Lineas de énfasis 😎😍</h2>
+        <h2 className="title contact">Contáctanos en </h2> 
+          <p>📧 ingenieria.materiales@gmail.com 📧</p>
+        <h2 className="lineaEnfasis"> Lineas de énfasis 😎😍</h2>
           <ul className="Footer-aid-unorderList">
             <li className="hack list">Cerámicos</li>
             <li className="hack list ">Compuestos</li>
@@ -38,11 +38,11 @@ const Footer = () => {
             <li className="hack list">Polimeros</li>
             <li className="hack list">Tech </li>
           </ul>
-          <div className="Footer-suscription">
+          {/* <div className="Footer-suscription">
         <span>Suscribete a nuestra base de datos</span>
         <input type="email" placeholder="email " />
         <button type="button">suscription</button>
-      </div>
+      </div> */}
 
         </div>
         <div className="Footer-announce">

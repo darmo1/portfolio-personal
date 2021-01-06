@@ -17,10 +17,11 @@
 }
 
 .Footer-aid{
+    align-items: center;
     display: grid;
     grid-column: 4/7 ;
     justify-self: center;
-    align-self: center;
+    padding: 1.5rem;
 }
 
 .Footer-aid-unorderList{
@@ -98,5 +99,52 @@
     justify-content: center;
     margin:1rem 0.5rem;
     width: 80px;
-    background-color: #F06C82;
+    background-color: #0a8ecd;
+}
+
+.contact{
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.lineaEnfasis{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 768px){
+
+    .Footer-top{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .Footer-credits, .Footer-aid{
+        margin: auto;
+    }
+
+    .lineaEnfasis, .Footer-aid > p{
+        text-align: center;
+    }
+
+    .Footer-aid-unorderList{
+        justify-content: center;
+    }
+
+    .Footer-links{
+        flex-wrap: wrap;
+        height: auto;
+        margin: 0 2rem 0 2rem;
+        padding: 0;
+    }
+
+    .Footer-links > span {
+        margin-bottom: 2rem;
+        order:1
+    }
+
+    .Footer-links > ul{
+        order:2;
+    }
 }

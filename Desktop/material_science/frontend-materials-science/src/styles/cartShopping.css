@@ -1,0 +1,27 @@
+.Nav-cart{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title-tienda{
+    color:#63b8ee;
+    font-size: 28px;
+    font-weight: bold;
+}
+.cart-shop{
+    background: #f0c14b;
+    border-radius: 12px;
+    padding:10px;
+    text-align: center;
+    width: 100px;
+}
+
+.cart-shop:hover{
+    box-shadow: 0px 15px 20px rgba(175, 175, 175, 0.966);
+    transform: translateY(-7px);
+}

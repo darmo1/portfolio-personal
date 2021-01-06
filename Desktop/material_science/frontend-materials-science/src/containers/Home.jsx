@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../example.js";
+import Footer from "../components/Footer";
 import Article from "../components/Article";
 import Banner from "../components/Banner";
-
+import Feature from "../components/feature";
 import chemestry from "../components/img/chemistry.svg";
 import competence from "../components/img/competence.svg";
 import metals from "../components/img/three-dimensional.svg";
 import biological from "../components/img/biological.svg";
 import ladrillo from "../components/img/ladrillos.svg";
+import Rocket from '../components/img/rocket.jpg'
 import "../styles/home.css";
+import { clienteAxios } from "../config/axios";
 
 const Home = () => {
+  const [blogs, setBlogs] = useState([]);
+  const blogsOfMonth = blogs.slice(-7).reverse();
+
+  useEffect(() => {
+    try {
+      const consultarAPI = async () => {
+        const blogConsulta = await clienteAxios.get("/blog");
+        setBlogs(blogConsulta.data);
+      };
+      consultarAPI();
+    } catch (error) {
+      //Error con autorizacion
+      console.log("Entre en un error de axios");
+      if (error.response.status === 500) {
+      }
+    }
+  }, []);
+
   return (
     <div className="Home">
       <Banner />
@@ -28,9 +48,77 @@ const Home = () => {
             </div>
           </div>
           <div className="articles">
-            {data.articles.map((article) => (
-              <Article article={article} key={article.id} />
-            ))}
+            {blogs.length > 0 ? (
+              blogsOfMonth.map((article) => (
+                <Article article={article} key={article._id} />
+              ))
+            ) : (
+              <div className="Single-article">
+                <div>Publicaremos próximamente</div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="section-publicity">
+        <h1 className="title">
+          {" "}
+          Ayudanos a construir la mejor comunidad de Ingeniería de Materiales
+        </h1>
+        <div className="line"></div>
+        <div className="publicity-content">
+          <div className="publicity-one">
+            <div className="mini-cart">
+              <div className="testimonial">
+                <div className="img-rocket">
+                  <img src={Rocket} alt="Ingeniero" />
+                </div>
+                <span>
+ 
+                </span>
+              </div>
+              <p className="mission">Nuestro objetivo es dar a conocer esta increíble carrera</p>
+            </div>
+
+            <div className="publicity-text">
+              Te invitamos a publicar con nosotros <br />
+              <p>
+                Escríbenos a <a href="/">ingenieria.materiales@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div className="publicity-two">
+            <p>Te invitamos a publicar con nosotros</p>
+            <br />
+            {/* <strong>Si tienes algo que contar como</strong> */}
+
+            <ul className="list-request-publicity">
+              <Feature color="#E8C921" text="Blogs 📕📒📔" />
+              <Feature color="#BBA1FF" text="Artículos 📖📃📚" />
+              <Feature
+                color="#2490FC"
+                text="¿Estuviste investigando algo de materiales? ¡Escríbenos!👨🏿‍🏭👷🏾‍♂️👩🏾‍💻"
+              />
+              <Feature
+                color="#E66CEF"
+                text="¿Quieres contar algo de materiales? ¡Escríbenos! 💯🧑🏿‍🔬   "
+              />
+              <Feature
+                color="#F97308"
+                text="Conoces una oportunidad de trabajo para compartir. ¡Escríbenos! 🎁🎉⚡️"
+              />
+              <Feature
+                color="#8FE160"
+                text=" ¿Quieres compartir tu historia? ¡Escríbenos! 👏🏼👨🏻‍🏫✍🏻 "
+              />
+            </ul>
+            <br />
+
+            <p>
+              Sumate a la la nueva generación de profesionales que vamos a
+              cambiar la industria
+            </p>
           </div>
         </div>
       </div>
@@ -51,7 +139,7 @@ const Home = () => {
               <p>Cerámicos</p>
             </div>
           </Link>
-          <Link>
+          <Link to={"/"}>
             <div>
               <img className="icon-sponsor" src={chemestry} alt="sponsor2" />
               <p>Polímeros</p>
@@ -73,66 +161,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
-      <div className="section-publicity">
-        <h1 className="title">
-          {" "}
-          Unete y ayudanos a construir la mejor comunidad de Ingeniería de
-          Materiales
-        </h1>
-        <div className="publicity-content">
-          <div className="publicity-one">
-            <div className="mini-cart">
-              <div className="testimonial">
-                <span>
-                  <img alt="Ingeniero" />
-                </span>
-                <span>
-                  <div>Danilo Morales</div>
-                  <a href="/">
-                    <div> @twitter</div>
-                  </a>
-                </span>
-              </div>
-              <p>Nuestro objetivo es dar a conocer esta increíble carrera</p>
-            </div>
-
-            <p className="publicity-text">
-              Te invitamos a publicar con nosotros <br />
-              <p>
-                Escribenos a <a href="/">materiales@materiales.com</a>
-                <p>
-                  {" "}
-                  Sumate a la la nueva generación de profesionales que vamos a
-                  cambiar la industria
-                </p>
-              </p>
-            </p>
-          </div>
-          <div className="publicity-two">
-            <p>Te invitamos a publicar con nosotros</p>
-            <br />
-            <strong>Si tienes algo que contar como</strong>
-
-            <ul className="list-request-publicity">
-              <li>blog </li>
-              <li>articulos</li>
-              <li> Si Estuviste investigando algo especifico de materiales </li>
-              <li> Si quieres contar algo de materiales </li>
-              <li>
-                {" "}
-                Conoces una oportunidad de trabajo para compartir con la
-                comuninidad
-              </li>
-              <li>
-                Quieres compartir tu historia con la ingenieria de materiales
-              </li>
-            </ul>
-          </div>
-
-          <div></div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

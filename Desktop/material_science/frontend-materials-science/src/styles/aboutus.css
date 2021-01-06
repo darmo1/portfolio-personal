@@ -1,0 +1,37 @@
+.AboutUs{
+    margin: auto;
+    max-width: 1200px;
+    background: white;
+}
+
+.container-aboutUs{
+    padding: 2.5rem;
+}
+
+.title-aboutUs{
+    font-size: 40px;
+    margin: 1.5rem 0;
+}
+.text-aboutUs{
+    margin: 1rem 0;
+    line-height: 2;
+}
+
+.list-aboutUs{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-aboutUs{
+    margin: 1rem 1rem;
+    background: #F3C243;
+    width: 150px;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.quote-aboutUs{
+    text-align: end;
+}
