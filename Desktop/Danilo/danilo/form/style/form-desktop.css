@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.vertical-margin{
+    margin: 1rem 0;
+}
+.form-I{
+    max-width: 1200px;
+    margin:auto;
+    padding: 1rem 0;
+}
+.flag, .title{
+    display: flex;
+    align-items: flex-end;
+}
+.flag img {
+    width: 200px;
+    margin-right: 2rem;
+}
+
+.title{
+    flex-direction: column;
+    align-items: flex-end;
+}
+.form-id{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: repeat(6 200px) 400px;
+    border: none
+}
+.form-id__details{
+    grid-column: 1/5 ;
+    grid-row: 1/2;
+    border: none !important;
+}
+.form-id__name{
+    grid-column: 1/4 ;
+    grid-row: 2/3;
+}
+.form-id__organization{
+    grid-column: 4/5 ;
+    grid-row: 2/3;
+}
+.form-id__address{
+    grid-column: 1/5 ;
+    grid-row: 3/4;
+}
+.form-id__city{
+    grid-column: 1/2 ;
+    grid-row: 4/5;
+}
+.form-id__code{
+    grid-column: 2/3 ;
+    grid-row: 4/5;
+}
+.form-id__zip{
+    grid-column: 3/4 ;
+    grid-row: 4/5;
+}
+.form-id__country{
+    grid-column: 4/5 ;
+    grid-row: 4/5;
+}
+.form-id__contact{
+    grid-column: 1/4 ;
+    grid-row: 5/6;
+}
+.form-id__phone{
+    grid-column: 4/5 ;
+    grid-row: 5/6;
+}
+.form-id__email{
+    grid-column: 1/4 ;
+    grid-row: 6/7;
+}
+.form-id__fax{
+    grid-column: 4/5 ;
+    grid-row: 6/7;
+}
+.form-id_others{
+    grid-column: 1/5 ;
+    grid-row: 7/8;
+}
+
+input[type="text"]{
+    display: block;
+    width: 100%;
+    height: 46px;
+    border:none;
+   
+}
+
+input[type="text"]:focus + label{
+    transform: translateY(-24px);
+}
+input[type="text"]:focus{
+    outline: none;
+}
+
+.form-id div{
+    position: relative;
+    padding: 10px;
+    border: solid thin black;
+ 
+}
+
+.form-id label{
+    position: absolute;
+    left:10px;
+    margin:10px 0;
+    bottom: 11px;
+    line-height: 26px;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+  .form-id_others div{
+    border:none; 
+    padding: 0;
+}
+
+.form-check{
+    margin: 1rem 0;
+}
+.purchasing__check,  .communication div {
+    border:solid thin black;
+    padding: 10px ;
+
+}
+.send div{
+    border: none;
+}
+
+.sentRequest{ 
+    padding-left: 0px !important;
+}
