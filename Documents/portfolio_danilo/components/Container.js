@@ -31,7 +31,8 @@ const Container = (props) => {
         {/* <meta name="twitter:image" content={meta.image} /> */}
       </Head>
 
-      <nav>
+      <div className="h-12 flex content-center">
+      <nav className="max-w-4xl px-4 container mx-auto flex flex-wrap justify-between content-center">
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -67,14 +68,17 @@ const Container = (props) => {
           {menuNav.map((item) => {
             return (
               <Link href={item.href} passHref key={item.id}>
-                <a className={item.className}>{item.title}</a>
+                <a className={`${item.className} mr-4 `}>{item.title}</a>
               </Link>
             );
           })}
         </div>
       </nav>
+      </div>
       <main
         id="#skip"
+        className="px-4"
+       
       >
           {props.children}
       </main>

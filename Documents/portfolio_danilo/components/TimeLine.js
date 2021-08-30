@@ -54,7 +54,7 @@ const TimeLine = () => {
     const [ isShowingFullTimeLine, showFullTimeline ] = React.useState(false)
 
   return (
-    <>
+    <div className="max-w-4xl mx-auto">
       <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
         Timeline
       </h3>
@@ -89,7 +89,7 @@ const TimeLine = () => {
           </svg>
         </button>
       )}
-    </>
+    </div>
   );
 };
 
