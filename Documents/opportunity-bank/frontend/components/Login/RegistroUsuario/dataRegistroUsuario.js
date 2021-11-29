@@ -1,0 +1,223 @@
+const classInput =
+  'w-full h-12 px-4 py-2 my-1 text-base border border-color_gray_4 placeholder-color_gray_5 rounded-2xl'
+
+export const dataRegistroUsuario = [
+  {
+    id: 1,
+    name: 'tipo_sociedad',
+    fieldName: 'Tipo de Sociedad',
+    type: 'select',
+    className: `${classInput}`,
+    options: [
+      // {
+      //   id: 1.1,
+      //   name: '',
+      //   fieldName: '--Selecciona un campo--',
+      // },
+      {
+        id: 1.2,
+        name: 'N-Persona Natural',
+        fieldName: 'Persona Natural',
+      },
+      {
+        id: 1.3,
+        name: 'J-Persona Juridica',
+        fieldName: 'Persona Juridica',
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: 'tipo_entidad',
+    fieldName: 'Tipo de entidad',
+    type: 'select',
+    className: `${classInput}`,
+    options: [
+      // {
+      //   id: 2.1,
+      //   name: '',
+      //   fieldName: '--Selecciona un campo--',
+      // },
+      {
+        id: 2.2,
+        name: 'O-ORGANIZACIÓN SIN ÁNIMO DE LUCRO',
+        fieldName: 'Organizacion sin ánimo de lucro',
+      },
+      {
+        id: 2.3,
+        name: 'R-PRIVADA',
+        fieldName: 'Privada',
+        className: '',
+      },
+      {
+        id: 2.4,
+        name: 'P-PÚBLICA',
+        fieldName: 'Pública',
+      },
+      {
+        id: 2.5,
+        name: 'T-OTRO',
+        fieldName: 'Otro',
+      },
+      {
+        id: 2.6,
+        name: 'NINGUNO',
+        fieldName: 'Ninguno (en caso de ser persona natural)',
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'tipo_identificacion',
+    fieldName: 'Tipo de identificación',
+    type: 'select',
+    className: `${classInput}`,
+    options: [
+      // {
+      //   id: 3.1,
+      //   name: '',
+      //   fieldName: '--Selecciona un campo--',
+      // },
+      {
+        id: 3.2,
+        name: '1-Cédula de Ciudadanía',
+        fieldName: 'Cédula de Ciudadanía',
+      },
+      {
+        id: 3.3,
+        name: '2-Tarjeta de identidad',
+        fieldName: 'Tarjeta de identidad',
+        className: '',
+      },
+      {
+        id: 3.4,
+        name: '3-Cédula de Extranjería',
+        fieldName: 'Cédula de Extranjería',
+      },
+      {
+        id: 3.5,
+        name: '4-NIT',
+        fieldName: 'NIT',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'documento',
+    label: 'Documento',
+    fieldName: 'Escribe aquí el número de tu documento',
+    type: 'number',
+    className: `${classInput}`,
+  },
+  {
+    id: 5,
+    name: 'nombres',
+    label: 'Nombres',
+    fieldName: 'Escribe aquí tus nombres',
+    type: 'text',
+    className: `${classInput}`,
+  },
+  {
+    id: 6,
+    name: 'apellidos',
+    label: 'Apellidos',
+    fieldName: 'Escribe aquí tus apellidos',
+    type: 'text',
+    className: `${classInput}`,
+  },
+  {
+    id: 7,
+    name: 'correo',
+    label: 'Correo',
+    fieldName: 'Escribe aquí tu correo electrónico',
+    type: 'email',
+    className: `${classInput}`,
+  },
+  {
+    id: 8,
+    name: 'telefono',
+    label: 'Teléfono',
+    fieldName: 'Escribe aquí tu número de teléfono',
+    type: 'number',
+    className: `${classInput}`,
+  },
+  {
+    id: 9,
+    name: 'celular',
+    label: 'Celular',
+    fieldName: 'Escribe aquí tu número de celular',
+    type: 'number',
+    className: `${classInput}`,
+  },
+  {
+    id: 10,
+    name: 'direccion',
+    label: 'Dirección',
+    fieldName: 'Escribe aquí tu dirección',
+    type: 'text',
+    className: `${classInput}`,
+  },
+  {
+    id: 11,
+    name: 'barrio',
+    label: 'Barrio',
+    fieldName: 'Escribe aquí tu barrio',
+    type: 'text',
+    className: `${classInput}`,
+  },
+  {
+    id: 15,
+    name: 'genero',
+    label: 'Genero',
+    fieldName: 'Selecciona tu género',
+    type: 'select',
+    className: `${classInput}`,
+    options: [
+      // {
+      //   id: 15.1,
+      //   name: '',
+      //   fieldName: '--Selecciona un campo--',
+      // },
+      {
+        id: 15.2,
+        name: 'f',
+        fieldName: 'Femenino',
+      },
+      {
+        id: 15.3,
+        name: 'm',
+        fieldName: 'Masculino',
+      },
+      {
+        id: 15.4,
+        name: 'o',
+        fieldName: 'Otro',
+      },
+    ],
+  },
+]
+
+// {
+//   id: 12,
+//   name: 'pais',
+//   label: 'País',
+//   fieldName: 'Escribe aquí tu país',
+//   type: 'text',
+//   className: `${classInput}`,
+// },
+// {
+//   id: 13,
+//   name: 'departamento',
+//   label: 'Departamento',
+//   fieldName: 'Escribe aquí tu departamento',
+//   type: 'text',
+//   className: `${classInput}`,
+// },
+// {
+//   id: 14,
+//   name: 'municipio',
+//   label: 'Municipio',
+//   fieldName: 'Escribe aquí tu municipio',
+//   type: 'text',
+//   className: `${classInput}`,
+// },

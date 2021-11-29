@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Lexend+Tera&family=Roboto:wght@200;400;500;700&display=swap');
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* div {
+  outline: solid 1px red;
+} */
+
+/*
+div > *{
+  outline: solid 1px blue;
+} */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+body {
+  /* overflow: overlay; */
+  position: relative;
+}
+
+/* body::-webkit-scrollbar {
+  width: 1.5rem;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-top:81px;
+  
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #3489CE;
+  height: 100px;
+  margin-top:80px;
+} */
+
+
+
+@media (max-width: 540px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/*Start BlockContent component styles */
+.block-content figure {
+  max-width:40%;
+  margin:0 auto;
+}
+
+.block-content figure img{
+  width:100%;
+  margin-bottom: 1rem;
+}
+
+.block-content p {
+  margin-bottom:1rem;
+}
+
+/*End BlockContent component styles */
+
+input {
+  font-family:inherit;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+*::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+*::-moz-placeholder {
+  font-size: 1rem;
+}

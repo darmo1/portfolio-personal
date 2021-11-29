@@ -1,0 +1,8 @@
+export { default as BasicInformationForm } from './BasicInformation/index'
+export { default as InfoMate } from './InfoMate/index'
+export { default as PopulationVariables } from './populationVariables'
+export { default as IncomeAndExpense } from './IncomeAndExpense/index'
+export { default as BienesRaices } from './BienesRaices'
+export { default as PersonalReference } from './PersonalReferences'
+export { default as HabbeasData } from './HabbeasData'
+export { default as Contact } from './Contact'

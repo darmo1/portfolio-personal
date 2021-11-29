@@ -1,0 +1,58 @@
+export const DataFamiliarReference = [
+  {
+    id: 54,
+    name: 'refFamiliarFirstName',
+    fieldName: 'Nombre 1 - referencia familiar',
+    type: 'text',
+    className: '',
+  },
+  {
+    id: 55,
+    name: 'refFamiliarSecondName',
+    fieldName: 'Nombre 2 - referencia familiar',
+    type: 'text',
+    className: '',
+  },
+  {
+    id: 56,
+    name: 'refFamiliarFirstSurname',
+    fieldName: 'Apellido 1 - referencia familiar',
+    type: 'text',
+    className: '',
+  },
+  {
+    id: 57,
+    name: 'refFamiliarSecondSurname',
+    fieldName: 'Apellido 2 - referencia familiar',
+    type: 'text',
+    className: '',
+  },
+  {
+    id: 58,
+    name: 'relationShip',
+    fieldName: 'parentesco',
+    type: 'text',
+    className: '',
+  },
+  {
+    id: 59,
+    name: 'refFamilarNumber',
+    fieldName: 'Número telefónico',
+    type: 'number',
+    className: '',
+  },
+  {
+    id: 60,
+    name: 'refFamilarPhone',
+    fieldName: 'Número Celular',
+    type: 'number',
+    className: '',
+  },
+  {
+    id: 60,
+    name: 'refFamilarAddress',
+    fieldName: 'Dirección',
+    type: 'text',
+    className: '',
+  },
+]
